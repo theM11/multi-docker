@@ -5,24 +5,28 @@
       "name": "client",
       "image": "mjondocker/multi-client",
       "hostname": "client",
-      "essential": false
+      "essential": false,
+      "memory": 160
     },
     {
       "name": "server",
       "image": "mjondocker/multi-server",
       "hostname": "api",
-      "essential": false
+      "essential": false,
+      "memory": 160
     },
     {
     "name": "worker",
     "image": "mjondocker/multi-worker",
     "hostname": "worker",
-    "essential": false
+    "essential": false,
+    "memory": 160
     },
     {
       "name": "nginx",
       "image": "mjondocker/multi-nginx",
       "essential":"true",
+      "memory": 160,
       "portMappings": [
         {
           "hostPort": 80,
