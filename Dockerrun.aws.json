@@ -1,6 +1,6 @@
 {
   "AWSEBDockerrunVersion": 2,
-  "containerDEfinitions":[
+  "containerDefinitions":[
     {
       "name": "client",
       "image": "mjondocker/multi-client",
